@@ -11,7 +11,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
   <title>My PHP - Home</title>
-    <?php require_once("../admin/dist/css/css.php"); ?>
+    <?php require_once("dist/css/css.php"); ?>
   
 </head>
 <body class="hold-transition sidebar-mini">
