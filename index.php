@@ -11,18 +11,20 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
   <title>My PHP - Home</title>
-    <?php include_once("core/css.php"); ?>
+    <?php require_once("core/css.php"); ?>
   
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
 
+  <!-- #region navbar -->
   <!-- Navbar -->
-  <?php include_once("layout/navbar.php"); ?>
+  <?php require_once("layout/navbar.php"); ?>
   <!-- /.navbar -->
+  <!-- #endregion -->
 
   <!-- Main Sidebar Container -->
-  <?php include_once("layout/mainSidebar.php"); ?>
+  <?php require_once("layout/mainSidebar.php"); ?>
   
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
@@ -112,11 +114,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- /.content-wrapper -->
 
   <!-- Control Sidebar -->
-  <?php include_once("layout/controlSidebar.php"); ?>
+  <?php require_once("layout/controlSidebar.php"); ?>
   <!-- /.control-sidebar -->
 
   <!-- Main Footer -->
-  <?php include_once("layout/footer.php"); ?>
+  <?php require_once("layout/footer.php"); ?>
 <!-- ./wrapper -->
 
 <!-- REQUIRED SCRIPTS -->
