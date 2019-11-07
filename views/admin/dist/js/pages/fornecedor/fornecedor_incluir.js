@@ -33,7 +33,7 @@ $(function () {
                     $('#divNomeRazaoSocial label').text('Razao Social');
                     $('#divNomeRazaoSocial label').prop('for','razaoSocial');
                     $('#divNomeRazaoSocial input').prop('name','razaoSocial');
-                    $('#divNomeRazaoSocial label').prop('id','razaoSocial');
+                    $('#divNomeRazaoSocial input').prop('id','razaoSocial');
                     nomeRazaoSocial.show();
                     nomeFantasia.show();
                 break;
