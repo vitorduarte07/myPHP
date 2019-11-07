@@ -35,6 +35,7 @@ $(function () {
                     $('#divNomeRazaoSocial input').prop('name','razaoSocial');
                     $('#divNomeRazaoSocial input').prop('id','razaoSocial');
                     nomeRazaoSocial.show();
+                    $('#divTipoDocumento label').text('Nome Fantasia');
                     nomeFantasia.show();
                 break;
             default:
@@ -42,7 +43,7 @@ $(function () {
         }
     }
 
-    $(document).on('click', 'input[type=radio', function () {
+    $(document).on('click', 'input[type=radio]', function () {
         var id = $(this).prop('id');
         mostrarInput(id);
     });
