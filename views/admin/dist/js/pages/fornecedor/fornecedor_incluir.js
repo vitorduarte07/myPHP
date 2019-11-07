@@ -4,10 +4,12 @@ $(function () {
     var tipoDocumento = $('#divTipoDocumento');
     var nomeRazaoSocial = $('#divNomeRazaoSocial');
     var nomeFantasia = $('#divNomeFantasia');
+    var inscricaoEstadual = $('#divInscricaoEstadual');
 
     tipoDocumento.hide();
     nomeRazaoSocial.hide();
     nomeFantasia.hide();
+    inscricaoEstadual.hide();
 
     function mostrarInput(id)
     {
@@ -23,6 +25,8 @@ $(function () {
                 $('#divNomeRazaoSocial input').prop('name','nome');
                 $('#divNomeRazaoSocial label').prop('id','nome');
                 nomeRazaoSocial.show();
+                nomeFantasia.hide();
+                inscricaoEstadual.hide();
 
                 break;
             case 'pj':
@@ -35,8 +39,16 @@ $(function () {
                     $('#divNomeRazaoSocial input').prop('name','razaoSocial');
                     $('#divNomeRazaoSocial input').prop('id','razaoSocial');
                     nomeRazaoSocial.show();
-                    $('#divTipoDocumento label').text('Nome Fantasia');
+                    $('#divNomeFantasia label').text('Nome Fantasia');
+                    $('#divNomeFantasia input').prop('for', 'nomeFantasia');
+                    $('#divNomeFantasia input').prop('name', 'nomeFantasia');
+                    $('#divNomeFantasia input').prop('id', 'nomeFantasia');
                     nomeFantasia.show();
+                    $('#divInscricaoEstadual label').text('Inscrição Estadual');
+                    $('#divInscricaoEstadual input').prop('for', 'inscricaoEstadual');
+                    $('#divInscricaoEstadual input').prop('name', 'inscricaoEstadual');
+                    $('#divInscricaoEstadual input').prop('id','inscricaoEstadual');
+                    inscricaoEstadual.show();
                 break;
             default:
                 break;

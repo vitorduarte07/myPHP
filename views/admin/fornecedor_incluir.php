@@ -77,7 +77,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             <input type="text" class="form-control">
                           </div> 
                       </div> 
-                      <div class="col-md-5" id="divNomeRazaoSocial"> 
+                      <div class="col-md-3" id="divNomeRazaoSocial"> 
                           <div class="form-group">
                             <label></label>
                             <input type="text" class="form-control">
@@ -88,8 +88,48 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             <label></label>
                             <input type="text" class="form-control">
                           </div> 
+                      </div>
+                      <div class="col-md-2" id="divInscricaoEstadual">
+                          <div class="form-group">
+                            <label></label>
+                            <input type="text" class="form-control">
+                          </div> 
                       </div>     
                     </div><!-- Row DO formulario -->
+                    <div class="row pt-3">
+                      <div class="col-md-2">
+                        <div class="form-group">
+                        <label>CEP</label>
+                        <input type="number" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="form-group">
+                        <label>Logradouro</label>
+                        <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="form-group">
+                        <label>Número</label>
+                        <input type="number" class="form-control">
+                        </div>
+                      </div>
+                    </div><!-- row 2 do formulario -->
+                    <div class="row">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                        <label>Bairro</label>
+                        <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="form-group">
+                        <label>Cidade</label>
+                        <input type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div><!-- row 3 do formulário -->
                   </form>  <!-- Form -->       
               </div>
               <div class="card-footer">
