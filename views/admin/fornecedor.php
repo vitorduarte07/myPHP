@@ -53,7 +53,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <div class="row d-flex align-items-stretch">
   
           <div class="col-sm-12 py-2">
-              <a href="fornecedor_incluir.php" class="btn btn-success" ><i class="fas fa-plus"></i> cadastrar fornecedor</a>
+              <a href="fornecedor_incluir.php" class="btn btn-success" ><i class="fas fa-plus"></i> Cadastrar fornecedor</a>
           </div> 
             <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch">
               <div class="card bg-light">

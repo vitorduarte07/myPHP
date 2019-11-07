@@ -33,16 +33,17 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Starter Page</h1>
-          </div><!-- /.col -->
+            <h1 class="m-0 text-dark">Cadastrar fornecedor</h1>
+          </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Starter Page</li>
+              <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+              <li class="breadcrumb-item active"><a href="fornecedor.php">Fornecedor</a></li>
+              <li class="breadcrumb-item active">Cadastrar</li>
             </ol>
-          </div><!-- /.col -->
-        </div><!-- /.row -->
-      </div><!-- /.container-fluid -->
+          </div>
+        </div>
+      </div>
     </div>
     <!-- /.content-header -->
 
@@ -50,61 +51,52 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <div class="content">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-6">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk of the card's
-                  content.
-                </p>
-
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-              </div>
-            </div>
-
-            <div class="card card-primary card-outline">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk of the card's
-                  content.
-                </p>
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-              </div>
-            </div><!-- /.card -->
-          </div>
-          <!-- /.col-md-6 -->
-          <div class="col-lg-6">
-            <div class="card">
+          <div class="col-sm-12">
+            <div class = "card">
               <div class="card-header">
-                <h5 class="m-0">Featured</h5>
+                  <h5>CNPJ/CPF - NOME/RazaoSocial - EndereçoCompleto
+                  Telefone/Email - Status</h5>
               </div>
               <div class="card-body">
-                <h6 class="card-title">Special title treatment</h6>
-
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <form role="form"> 
+                    <div class="row">
+                      <div class="col-md-2"> 
+                            <label>Estabelecimento</label>
+                        <div class="form-check">
+                          <input id="pf" class="form-check-input" type="radio" name="radio1">
+                          <label for="pf" class="form-check-label">Pessoa física</label>
+                        </div>
+                        <div class="form-check">
+                          <input id="pj" class="form-check-input" type="radio" name="radio1">
+                          <label for="pj" class="form-check-label">Pessoa júridica</label>
+                        </div>
+                      </div>
+                      <div class="col-md-2" id="divTipoDocumento">
+                          <div class="form-group">
+                            <label></label>
+                            <input type="text" class="form-control">
+                          </div> 
+                      </div> 
+                      <div class="col-md-5" id="divNomeRazaoSocial"> 
+                          <div class="form-group">
+                            <label></label>
+                            <input type="text" class="form-control">
+                          </div> 
+                      </div>
+                      <div class="col-md-3" id="divNomeFantasia"> 
+                          <div class="form-group">
+                            <label></label>
+                            <input type="text" class="form-control">
+                          </div> 
+                      </div>     
+                    </div><!-- Row DO formulario -->
+                  </form>  <!-- Form -->       
               </div>
-            </div>
-
-            <div class="card card-primary card-outline">
-              <div class="card-header">
-                <h5 class="m-0">Featured</h5>
+              <div class="card-footer">
+                  Este é o footer
               </div>
-              <div class="card-body">
-                <h6 class="card-title">Special title treatment</h6>
-
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <!-- /.col-md-6 -->
+        </div>
+          </div><!-- COL-SM-12 -->
         </div>
         <!-- /.row -->
       </div><!-- /.container-fluid -->
@@ -123,6 +115,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 <!-- REQUIRED SCRIPTS -->
 <?php require_once("dist/js/javascript.php"); ?>
+<script src="dist/js/pages/fornecedor/fornecedor_incluir.js"></script>
 
 </body>
 </html>
