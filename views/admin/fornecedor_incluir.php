@@ -100,19 +100,19 @@ scratch. This page gets rid of all links and provides the needed markup only.
                       <div class="col-md-2">
                         <div class="form-group">
                         <label>CEP</label>
-                        <input type="number" class="form-control">
+                        <input type="text" class="form-control" id="cep">
                         </div>
                       </div>
                       <div class="col-md-3">
                         <div class="form-group">
                         <label>Logradouro</label>
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" id="logradouro">
                         </div>
                       </div>
                       <div class="col-md-3">
                         <div class="form-group">
                         <label>Número</label>
-                        <input type="number" class="form-control">
+                        <input type="number" class="form-control" id="numero">
                         </div>
                       </div>
                     </div><!-- row 2 do formulario -->
@@ -120,13 +120,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <div class="col-md-3">
                         <div class="form-group">
                         <label>Bairro</label>
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" id="bairro">
                         </div>
                       </div>
                       <div class="col-md-3">
                         <div class="form-group">
                         <label>Cidade</label>
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" id="cidade">
                         </div>
                       </div>
                     </div><!-- row 3 do formulário -->
@@ -156,6 +156,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <!-- REQUIRED SCRIPTS -->
 <?php require_once("dist/js/javascript.php"); ?>
 <script src="dist/js/pages/fornecedor/fornecedor_incluir.js"></script>
+<script src="dist/js/viacep.js"></script>
 
 </body>
 </html>
