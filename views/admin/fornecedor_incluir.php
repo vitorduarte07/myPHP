@@ -108,7 +108,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                       <div class="col-md-3">
                         <div class="form-group">
                         <label>Número</label>
-                        <input type="number" class="form-control" id="numero">
+                        <input type="text" class="form-control" id="numero" data-mask="S00.0">
                         </div>
                       </div>
                     </div><!-- row 2 do formulario -->
@@ -126,6 +126,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         </div>
                       </div>
                     </div><!-- row 3 do formulário -->
+                    <div class="row">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                        <label>Telefone</label>
+                        <input type="text" class="form-control" id="telefone" data-mask="(00) 00000-0000">
+                        </div>
+                      </div>
+                    </div><!-- ROW 4 do formulario-->
                   </form>  <!-- Form -->       
               </div>
               <div class="card-footer">
