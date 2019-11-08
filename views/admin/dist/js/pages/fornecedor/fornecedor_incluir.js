@@ -19,6 +19,7 @@ $(function () {
                 $('#divTipoDocumento label').prop('for', 'cpf');
                 $('#divTipoDocumento input').prop('name', 'cpf');
                 $('#divTipoDocumento input').prop('id', 'cpf');
+                $('#divTipoDocumento input').mask('000.000.000-00');
                 tipoDocumento.show();
                 $('#divNomeRazaoSocial label').text('Nome');
                 $('#divNomeRazaoSocial label').prop('for','nome');
@@ -33,6 +34,7 @@ $(function () {
                     $('#divTipoDocumento label').text('CNPJ');
                     $('#divTipoDocumento input').prop('name', 'cnpj');
                     $('#divTipoDocumento input').prop('id', 'cnpj');
+                    $('#divTipoDocumento input') .mask('00.000.000/0000-00');
                     tipoDocumento.show();
                     $('#divNomeRazaoSocial label').text('Razao Social');
                     $('#divNomeRazaoSocial label').prop('for','razaoSocial');
@@ -59,5 +61,7 @@ $(function () {
         var id = $(this).prop('id');
         mostrarInput(id);
     });
+
+    
 
 });

@@ -1,5 +1,6 @@
 <!-- jQuery -->
 <script src="plugins/jquery/jquery.min.js"></script>
+<script src="dist/js/terceiros/jquery.mask.min.js"></script>
 <!-- Bootstrap 4 -->
 <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->

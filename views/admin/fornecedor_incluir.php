@@ -53,10 +53,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <div class="row">
           <div class="col-sm-12">
             <div class = "card">
-              <div class="card-header">
-                  <h5>CNPJ/CPF - NOME/RazaoSocial - EndereçoCompleto
-                  Telefone/Email - Status</h5>
-              </div>
               <div class="card-body">
                   <form role="form"> 
                     <div class="row">
@@ -100,7 +96,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                       <div class="col-md-2">
                         <div class="form-group">
                         <label>CEP</label>
-                        <input type="text" class="form-control" id="cep">
+                        <input type="text" class="form-control cep" id="cep">
                         </div>
                       </div>
                       <div class="col-md-3">
@@ -157,6 +153,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <?php require_once("dist/js/javascript.php"); ?>
 <script src="dist/js/pages/fornecedor/fornecedor_incluir.js"></script>
 <script src="dist/js/viacep.js"></script>
+<script src="dist/js/meuInputMask.js"></script>
 
-</body>
-</html>
+  </body>
+  </html>
