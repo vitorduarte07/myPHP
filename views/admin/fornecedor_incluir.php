@@ -53,8 +53,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <div class="row">
           <div class="col-sm-12">
             <div class = "card">
+            <form role="form" name="formCadastrarFornecedor" action="processa_cadastro.php" method="POST"> 
               <div class="card-body">
-                  <form role="form"> 
                     <div class="row">
                       <div class="col-md-2"> 
                             <label>Estabelecimento</label>
@@ -76,19 +76,19 @@ scratch. This page gets rid of all links and provides the needed markup only.
                       <div class="col-md-3" id="divNomeRazaoSocial"> 
                           <div class="form-group">
                             <label></label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" name="nome">
                           </div> 
                       </div>
                       <div class="col-md-3" id="divNomeFantasia"> 
                           <div class="form-group">
                             <label></label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" name="nomeFantasia">
                           </div> 
                       </div>
                       <div class="col-md-2" id="divInscricaoEstadual">
                           <div class="form-group">
                             <label></label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" name="inscricaoEstadual">
                           </div> 
                       </div>     
                     </div><!-- Row DO formulario -->
@@ -96,19 +96,19 @@ scratch. This page gets rid of all links and provides the needed markup only.
                       <div class="col-md-2">
                         <div class="form-group">
                         <label>CEP</label>
-                        <input type="text" class="form-control cep" id="cep">
+                        <input type="text" class="form-control cep" id="cep" name="cep">
                         </div>
                       </div>
                       <div class="col-md-3">
                         <div class="form-group">
                         <label>Logradouro</label>
-                        <input type="text" class="form-control" id="logradouro">
+                        <input type="text" class="form-control" id="logradouro" name="logradouro">
                         </div>
                       </div>
                       <div class="col-md-3">
                         <div class="form-group">
                         <label>Número</label>
-                        <input type="text" class="form-control" id="numero" data-mask="S00.0">
+                        <input type="text" class="form-control" id="numero" name="numero">
                         </div>
                       </div>
                     </div><!-- row 2 do formulario -->
@@ -116,29 +116,36 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <div class="col-md-3">
                         <div class="form-group">
                         <label>Bairro</label>
-                        <input type="text" class="form-control" id="bairro">
+                        <input type="text" class="form-control" id="bairro" name="bairro">
                         </div>
                       </div>
                       <div class="col-md-3">
                         <div class="form-group">
                         <label>Cidade</label>
-                        <input type="text" class="form-control" id="cidade">
+                        <input type="text" class="form-control" id="cidade" name="cidade">
                         </div>
                       </div>
                     </div><!-- row 3 do formulário -->
                     <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-2">
                         <div class="form-group">
                         <label>Telefone</label>
-                        <input type="text" class="form-control" id="telefone" data-mask="(00) 00000-0000">
+                        <input type="text" class="form-control" id="telefone" data-mask="(00) 0000-0000" name="telefone">
+                        </div>
+                      </div>
+                      <div class="col-md-2">
+                        <div class="form-group">
+                        <label>Celular</label>
+                        <input type="text" class="form-control" id="telefone" data-mask="(00) 00000-0000" name="celular">
                         </div>
                       </div>
                     </div><!-- ROW 4 do formulario-->
-                  </form>  <!-- Form -->       
               </div>
               <div class="card-footer">
-                  Este é o footer
+                  <button type="submit" class="btn btn-primary">Cadastrar</button>
+                  <button type="reset" class="btn btn-link">Limpar formulário</button>
               </div>
+              </form>  <!-- Form -->    
         </div>
           </div><!-- COL-SM-12 -->
         </div>
