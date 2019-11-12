@@ -51,44 +51,33 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <div class="container-fluid">
         <div class="row">
           <?php 
-          var_dump($_POST);
-          var_dump($_GET);
-          if(isset( $_POST['nome'])){
-          $nome = $_POST['nome'];
-          }
-          if(isset( $_POST['razaoSocial'])){
-          $razaoSocial = $_POST['razaoSocial'];
-          }
-          if(isset( $_POST['cpf'])){
-          $cpf = $_POST['cpf'];
-          }
-          if(isset( $_POST['nomeFantasia'])){
-          $nomeFantasia = $_POST['nomeFantasia'];
-          }
-          if(isset( $_POST['inscricaoEstadual'])){
-          $inscricaoEstadual = $_POST['inscricaoEstadual'];
-          }
-          if(isset( $_POST['cep'])){
-          $cep = $_POST['cep'];
-          }
-          if(isset( $_POST['logradouro'])){
-          $logradouro = $_POST['logradouro'];
-          }
-          if(isset( $_POST['numero'])){
-          $numero = $_POST['numero'];
-          }
-          if(isset( $_POST['bairro'])){
-          $bairro = $_POST['bairro'];
-          }
-          if(isset( $_POST['cidade'])){
-          $cidade = $_POST['cidade'];
-          }
-          if(isset( $_POST['telefone'])){
-          $telefone = $_POST['telefone'];
-          }
-          if(isset( $_POST['celular'])){
-          $celular =  $_POST['celular'];
-          }
+        $informacoesCadastro = array('nome',
+        'razaoSocial',
+        'cpf',
+        'cnpj',
+        'nomeFantasia',
+        'inscricaoEstadual',
+        'cep',
+        'logradouro',
+        'numero',
+        'bairro',
+        'cidade',
+        'telefone',
+        'celular',   
+        );
+
+        echo '<table cellpadding="10">' ;
+        foreach ($informacoesCadastro as $arg) {
+          if (isset($_POST[$arg])) {
+            echo '<tr><td>'.$arg.'</td><td>' . $_POST[$arg] . '</td></tr>' ;
+        }
+        else {
+            echo '<tr><td>'.$arg.'</td><td>-</td></tr>' ;
+        }
+    }
+        echo '</table>' ;
+
+         
           ?>
           <div class="col-md-3">
           
